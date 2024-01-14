@@ -1,0 +1,25 @@
+{
+    "name": "cpkm/excel",
+    "autoload": {
+        "psr-4": {
+            "Cpkm\\Excel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cpkm\\Excel\\ExcelServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Henry",
+            "email": "asdcxz179@gmail.com"
+        }
+    ],
+    "require": {
+        "Cpkm/Admin": "*",
+        "maatwebsite/excel": "*"
+    }
+}
