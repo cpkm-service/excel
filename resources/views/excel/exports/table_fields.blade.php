@@ -4,7 +4,7 @@
             <td>欄位內容</td>
             @foreach($fields as $field)
             @if(!in_array($field, config('excel.import.types.'.$table.'.ignores')??[]))
-            <td>{{__(config($table.".form.fields.".$field.'.text'))}}</td>
+            <td>{{(__(config($table.".form.fields.".$field.'.text')))?__(config($table.".form.fields.".$field.'.text')):__(config($table.".form.fields.".$field.'.placeholder'))}}</td>
             @endif
             @endforeach
         </tr>
