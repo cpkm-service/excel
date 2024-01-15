@@ -5,16 +5,6 @@ return [
         'model' =>  Cpkm\Excel\Models\ExcelImport::class,
         'service'   => Cpkm\Excel\Services\ImportService::class,
         'types' =>  [
-            'material_categories'   =>  [
-                'name'      =>  '材料分類匯入',
-                'eloquent'  =>  \App\Models\MaterialCategory::class,
-                'model'     =>  \App\Imports\MaterialCategoryImport::class,
-            ],
-            'materials'   =>  [
-                'name'      =>  '材料匯入',
-                'eloquent'  =>  \App\Models\Material::class,
-                'model'     =>  \App\Imports\MaterialImport::class,
-            ],
         ],
         'form'  => [
             'name'  =>  'import',
